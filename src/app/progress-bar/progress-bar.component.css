@@ -1,12 +1,19 @@
 li {
   width: 2em;
   height: 2em;
+  margin: 0 2em;
+  display: inline-block;
+  position: relative;
+}
+
+.stage {
+  width: 2em;
+  height: 2em;
   text-align: center;
   line-height: 2em;
   border-radius: 1em;
   background: orange;
   margin: 0 2em;
-  display: inline-block;
   color: white;
   position: relative;
 }
@@ -15,7 +22,7 @@ li::before {
   content: '';
   position: absolute;
   top: .9em;
-  left: 0em;
+  left: 2em;
   width: 4em;
   height: .3em;
   background: orange;
@@ -26,7 +33,6 @@ li::after {
   content: '';
   position: absolute;
   top: .9em;
-  right: 0em;
   width: 4em;
   height: .3em;
   background: orange;
@@ -41,11 +47,7 @@ li:last-child::before {
   display: none;
 }
 
-.active {
-  background: orange;
-}
-
-.active ~ li {
+.active ~ li > div > p.stage {
   background: lightgrey;
   color: grey;
 }
@@ -63,7 +65,31 @@ ul {
   margin-top: 2.5em;
 }
 
-p {
+.stage-title {
   position: absolute;
   top: -2.5em;
+  color: grey;
+  font-size: 0.8em;
+  white-space: nowrap;
+  display: none;
+}
+
+.active > div > p.stage-title {
+  display: block;
+}
+
+#first {
+  margin-left: 1.5em;
+}
+
+#second {
+  margin-left: 2.3em;
+}
+
+#third {
+  margin-left: 1em;
+}
+
+#fourth {
+  margin-left: 1.7em;
 }

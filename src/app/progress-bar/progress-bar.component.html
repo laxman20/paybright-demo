@@ -1,6 +1,29 @@
 <ul>
-  <li>1</li>
-  <li class="active">2</li>
-  <li>3</li>
-  <li>4</li>
+  <li [ngClass]="{active: curStep == 1}">
+    <div>
+      <p id="first" class="stage-title">{{ stages[0] }}</p>
+      <p class="stage">1</p>
+    </div>
+  </li>
+  <li [ngClass]="{active: curStep == 2}">
+    <div>
+      <p id="second" class="stage-title">{{ stages[1] }}</p>
+      <p class="stage">2</p>
+    </div>
+  </li>
+  <li [ngClass]="{active: curStep == 3}">
+    <div>
+      <p id="third" class="stage-title">{{ stages[2] }}</p>
+      <p class="stage">3</p>
+    </div>
+  </li>
+  <li [ngClass]="{active: curStep == 4}">
+    <div>
+      <p id="fourth" class="stage-title">{{ stages[3] }}</p>
+      <p class="stage">4</p>
+    </div>
+  </li>
 </ul>
+<button (click)="curStep = curStep - 1">previous</button>
+<button (click)="curStep = curStep + 1">next</button>
+
