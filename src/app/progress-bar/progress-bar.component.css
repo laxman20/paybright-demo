@@ -68,6 +68,9 @@ ul {
 .stage-title {
   position: absolute;
   top: -2.5em;
+  left: 0;
+  right: 0;
+  text-align: center;
   color: grey;
   font-size: 0.8em;
   white-space: nowrap;
@@ -78,18 +81,7 @@ ul {
   display: block;
 }
 
-#first {
-  margin-left: 1.5em;
-}
-
-#second {
-  margin-left: 2.3em;
-}
-
-#third {
-  margin-left: 1em;
-}
-
-#fourth {
-  margin-left: 1.7em;
+div {
+  position: relative;
+  width: 6em;
 }
