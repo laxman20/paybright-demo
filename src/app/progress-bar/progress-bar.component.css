@@ -18,6 +18,13 @@ li {
   position: relative;
 }
 
+ul {
+  width: 24em;
+  margin: auto;
+  padding-right: 4em;
+  padding-left: 0;
+}
+
 li::before {
   content: '';
   position: absolute;
