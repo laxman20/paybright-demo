@@ -1,8 +1,11 @@
-<p>Get an instant decision</p>
-<p>
-  If approved, you will pay <span>$146/month for 12 months,</span> interest-free on your Visa, Mastercard, or Bank Account.
-</p>
-<form>
+<h3>Get an instant decision</h3>
+<div id="subheading">
+  <p>
+    If approved, you will pay <span>$146/month for 12 months,</span>
+  </p>
+  <p>interest-free on your Visa, Mastercard, or Bank Account.</p>
+</div>
+<form (ngSubmit)="onSubmit()" #profileForm="ngForm">
   <input type="text" placeholder="First Name">
   <input type="text" placeholder="Last Name">
   <input type="text" placeholder="Start typing your address here...">
@@ -10,10 +13,16 @@
   <input type="text" placeholder="Mobile Phone Number">
   <input type="text" placeholder="Email Address">
   <input type="text" placeholder="Birthday (mm/dd/yyyy)">
-  <p>Please ensure that this information is accurate and is your own.</p>
-  <p>
-    By clicking submit I agree to the PayBright <span>Terms & Conditions</span> and I consent to a credit check
-  </p>
+  <p id="disclaimer">Please ensure that this information is accurate and is your own.</p>
+  <div id="agreement">
+    <p>
+      By clicking submit I agree to the PayBright
+    </p>
+    <p>
+      <span>Terms & Conditions</span> and I consent to a credit check
+    </p>
+  </div>
   <input type="submit" value="SUBMIT">
 </form>
+<a class="footer" href="#">Privacy Statement</a>
 

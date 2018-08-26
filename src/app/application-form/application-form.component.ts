@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-application-form',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ApplicationFormComponent implements OnInit {
 
+  @Output() submitted = new EventEmitter<any>();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmit() {
+    this.submitted.emit();
   }
 
 }
