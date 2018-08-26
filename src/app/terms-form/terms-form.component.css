@@ -1,0 +1,67 @@
+.footer {
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+
+h2 {
+  color: #003861;
+  text-align: center;
+}
+
+p {
+  color: #003861;
+  text-align: center;
+  margin: auto;
+  font-size: 1.1em;
+}
+
+td {
+  color: #003861;
+}
+
+hr {
+  max-width: 24em;
+  border: 0.5px solid #e37520;
+}
+
+table {
+  margin: auto;
+  width: 24em;
+}
+
+.table-right {
+  text-align: right;
+  font-weight: bold;
+}
+
+.top {
+  margin-top: 1em;
+}
+
+.bottom {
+  margin-bottom: 1em;
+}
+
+.bold {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  border: 1px solid lightgrey;
+  font-size: 1.1em;
+  height: 1.7em;
+}
+
+::placeholder {
+  color: grey;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
