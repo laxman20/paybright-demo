@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-progress-bar',
@@ -6,29 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./progress-bar.component.css']
 })
 export class ProgressBarComponent implements OnInit {
-  curStep: number;
-  stages: string[];
+  @Input() title: string;
+  @Input('step') curStep: number;
+
+  _steps: number[];
+
+  @Input()
+  set total(total: number) {
+    this._steps = Array(total).fill(0).map((x,i)=>i);
+  }
 
   constructor() {
-    this.curStep = 1;
-    this.stages = [
-      "Application",
-      "Terms",
-      "Payment Setup",
-      "Documents"
-    ];
-  }
-
-  next() {
-    if (this.curStep < this.stages.length) {
-      this.curStep = this.curStep + 1;
-    }
-  }
-
-  prev() {
-    if (this.curStep > 1) {
-      this.curStep = this.curStep - 1;
-    }
   }
 
   ngOnInit() {

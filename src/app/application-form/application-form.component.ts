@@ -1,4 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-application-form',
@@ -7,15 +8,13 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class ApplicationFormComponent implements OnInit {
 
-  @Output() submitted = new EventEmitter<any>();
-
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   onSubmit() {
-    this.submitted.emit();
+    this.router.navigateByUrl('/terms');
   }
 
 }

@@ -1,8 +1,8 @@
 <ul>
-  <li *ngFor="let stage of stages; let i = index"
+  <li *ngFor="let step of _steps; let i = index"
     [ngClass]="{active: curStep == i+1}">
     <div>
-      <p class="stage-title">{{ stage }}</p>
+      <p class="stage-title">{{ title }}</p>
       <p class="stage">{{ i+1 }}</p>
     </div>
   </li>
