@@ -1,0 +1,34 @@
+<app-progress-bar
+  [title]="'Terms'"
+  [step]="2"
+  [total]="4">
+</app-progress-bar>
+<p>Please answer the following questions to help us confirm your identity.</p>
+<div class="questions">
+<app-question
+  [active]="true"
+  [title]="'Question #1'"
+  [question]="question"
+  [answers]="answers"
+  (answer)="q2.open()"></app-question>
+<app-question #q2
+  [active]="false"
+  [title]="'Question #2'"
+  [question]="question"
+  [answers]="answers"
+  (answer)="q3.open()"></app-question>
+<app-question #q3
+  [active]="false"
+  [title]="'Question #3'"
+  [question]="question"
+  [answers]="answers"
+  (answer)="q4.open()"></app-question>
+<app-question #q4
+  [active]="false"
+  [title]="'Question #4'"
+  [question]="question"
+  [answers]="answers"
+  (answer)="identified = true"></app-question>
+</div>
+<button *ngIf="identified">Continue</button>
+

@@ -7,10 +7,13 @@ import { AppComponent } from './app.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { ApplicationFormComponent } from './application-form/application-form.component';
 import { TermsFormComponent } from './terms-form/terms-form.component';
+import { QuestionComponent } from './question/question.component';
+import { IdentityFormComponent } from './identity-form/identity-form.component';
 
 const appRoutes: Routes = [
   { path: 'application', component: ApplicationFormComponent },
   { path: 'terms', component: TermsFormComponent },
+  { path: 'identity', component: IdentityFormComponent },
   { path: '', redirectTo: '/application', pathMatch: 'full' }
 ]
 
@@ -19,7 +22,9 @@ const appRoutes: Routes = [
     AppComponent,
     ProgressBarComponent,
     ApplicationFormComponent,
-    TermsFormComponent
+    TermsFormComponent,
+    QuestionComponent,
+    IdentityFormComponent
   ],
   imports: [
     BrowserModule,

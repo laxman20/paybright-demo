@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="title"
+       [ngClass]="{ active: isActive, answered: selectedAnswer != null }" >{{ title }}<i *ngIf="selectedAnswer != null" class="fa fa-lg fa-check"></i></div>
+  <div *ngIf=isActive>
+    <div class="question">{{ question }}</div>
+    <div *ngFor="let answer of answers; let i = index"
+      class="answer"
+      [ngClass]="{ selected: selectedAnswer == i }"
+      (click)="onSelectAnswer(i)">
+      {{ answer }}
+    </div>
+  </div>
+  <div class="closed" *ngIf="!isActive"></div>
+</div>
