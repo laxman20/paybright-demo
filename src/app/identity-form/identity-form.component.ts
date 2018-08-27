@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-identity-form',
@@ -11,7 +12,7 @@ export class IdentityFormComponent implements OnInit {
   answers: string[];
   identified: boolean;
 
-  constructor() {
+  constructor(private router: Router) {
     this.question = "Your credit file indicates you may have a credit card jointly with another person. Please choose your credit provider for this account from the following options."
     this.answers = [
       "Dresdner Bank",
@@ -20,6 +21,10 @@ export class IdentityFormComponent implements OnInit {
       "PC Financial",
       "None of the above"
     ];
+  }
+
+  onSubmit() {
+    this.router.navigateByUrl('/payment');
   }
 
   ngOnInit() {

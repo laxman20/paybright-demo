@@ -30,5 +30,5 @@
   [answers]="answers"
   (answer)="identified = true"></app-question>
 </div>
-<button *ngIf="identified">Continue</button>
+<button *ngIf="identified" (click)="onSubmit()">Continue</button>
 

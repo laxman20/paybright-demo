@@ -3,7 +3,10 @@
     [ngClass]="{active: curStep == i+1}">
     <div>
       <p class="stage-title">{{ title }}</p>
-      <p class="stage">{{ i+1 }}</p>
+      <p *ngIf="curStep <= i+1; else done" class="stage">{{ i+1 }}</p>
+      <ng-template #done>
+        <p class="stage"><i class="fa fa-check"></i><p>
+      </ng-template>
     </div>
   </li>
 </ul>
