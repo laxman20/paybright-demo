@@ -5,30 +5,35 @@
 </app-progress-bar>
 <p>Please answer the following questions to help us confirm your identity.</p>
 <div class="questions">
-<app-question
+<app-question #q1
   [active]="true"
   [title]="'Question #1'"
   [question]="question"
   [answers]="answers"
-  (answer)="q2.open()"></app-question>
+  (answer)="setResponse($event, 0)"></app-question>
 <app-question #q2
   [active]="false"
   [title]="'Question #2'"
   [question]="question"
   [answers]="answers"
-  (answer)="q3.open()"></app-question>
+  (answer)="setResponse($event, 1)"></app-question>
 <app-question #q3
   [active]="false"
   [title]="'Question #3'"
   [question]="question"
   [answers]="answers"
-  (answer)="q4.open()"></app-question>
+  (answer)="setResponse($event, 2)"></app-question>
 <app-question #q4
   [active]="false"
   [title]="'Question #4'"
   [question]="question"
   [answers]="answers"
-  (answer)="identified = true"></app-question>
+  (answer)="setResponse($event, 3)"></app-question>
 </div>
-<button *ngIf="identified" (click)="onSubmit()">Continue</button>
+<i class="fa fa-2x fa-angle-double-right"
+   *ngIf="!identified; else complete"
+   (click)="nextQuestion()"></i>
+<ng-template #complete>
+  <button *ngIf="identified" (click)="onSubmit()">CONTINUE</button>
+</ng-template>
 

@@ -1,6 +1,6 @@
 <div class="container">
   <div class="title"
-       [ngClass]="{ active: isActive, answered: selectedAnswer != null }" >{{ title }}<i *ngIf="selectedAnswer != null" class="fa fa-lg fa-check"></i></div>
+       [ngClass]="{ active: isActive, answered: selectedAnswer != null }" >{{ title }}<i *ngIf="correct" class="fa fa-lg fa-check"></i></div>
   <div *ngIf=isActive>
     <div class="question">{{ question }}</div>
     <div *ngFor="let answer of answers; let i = index"

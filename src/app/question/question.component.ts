@@ -14,24 +14,21 @@ export class QuestionComponent implements OnInit {
 
   @Output() answer = new EventEmitter<number>();
 
-  answerData: object[];
-  selectedAnswer: number;
+  private selectedAnswer: number;
+  private correct: boolean;
 
   constructor() { }
 
   ngOnInit() {
-    this.answerData = this.answers.map(a => {
-      return {
-        answer: a,
-        selected: false
-      }
-    });
   }
 
   onSelectAnswer(i: number) {
     this.selectedAnswer = i;
-    this.close();
     this.answer.emit(i);
+  }
+
+  setCorrect() {
+    this.correct = true;
   }
 
   open() {
