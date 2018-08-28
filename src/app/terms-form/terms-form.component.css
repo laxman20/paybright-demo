@@ -59,6 +59,7 @@ input {
   font-size: 1.1em;
   height: 1.8em;
   max-width: 9em;
+  text-align: center;
 }
 
 ::placeholder {
@@ -67,6 +68,22 @@ input {
   color: lightgrey;
   font-size: 0.9em;
   line-height: 1.8em;
+}
+
+input:focus {
+  outline: none;
+}
+
+input.error {
+  border: 1px solid red;
+  background-color: pink;
+  color: red;
+}
+
+p.error {
+  margin-top: 0.5em;
+  color: red;
+  font-size: 0.8em;
 }
 
 a {

@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class TermsFormComponent implements OnInit {
 
+  incorrectCode: boolean;
 
   constructor(private router: Router) { }
 
@@ -16,8 +17,13 @@ export class TermsFormComponent implements OnInit {
 
   onSubmit(code: string) {
     if (code.length < 6) {
+      this.incorrectCode = false;
       return;
     }
-    this.router.navigateByUrl('/identity');
+    if (code == "123456") {
+      this.router.navigateByUrl('/identity');
+    } else {
+      this.incorrectCode = true;
+    }
   }
 }
