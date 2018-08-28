@@ -15,8 +15,9 @@ export class TermsFormComponent implements OnInit {
   }
 
   onSubmit(code: string) {
-    if (code.length == 6) {
-      this.router.navigateByUrl('/identity');
+    if (code.length < 6) {
+      return;
     }
+    this.router.navigateByUrl('/identity');
   }
 }
