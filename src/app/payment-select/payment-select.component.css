@@ -122,7 +122,7 @@ p {
 }
 
 .scroll-container {
-  overflow: scroll;
+  overflow: overlay;
   height: 15em;
 }
 

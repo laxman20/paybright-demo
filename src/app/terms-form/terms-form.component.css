@@ -6,32 +6,33 @@
 h2 {
   color: #003861;
   text-align: center;
+  font-weight: normal;
 }
 
 p {
-  color: #003861;
+  color: #016796;
   text-align: center;
   margin: auto;
   font-size: 1.1em;
 }
 
 td {
-  color: #003861;
+  color: #016796;
 }
 
 hr {
-  max-width: 24em;
+  max-width: 22em;
   border: 0.5px solid #e37520;
 }
 
 table {
   margin: auto;
-  width: 24em;
+  width: 21em;
 }
 
 .table-right {
+  color: #003861;
   text-align: right;
-  font-weight: bold;
 }
 
 .top {
@@ -43,8 +44,8 @@ table {
 }
 
 .bold {
-  font-size: 1.2em;
-  font-weight: bold;
+  color: #003861;
+  font-size: 1.3em;
 }
 
 input {
@@ -52,16 +53,21 @@ input {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
-  border: 1px solid lightgrey;
+  border: 1px solid grey;
   font-size: 1.1em;
-  height: 1.7em;
+  height: 1.8em;
+  max-width: 9em;
 }
 
 ::placeholder {
   color: grey;
   text-align: center;
+  color: lightgrey;
+  font-size: 0.9em;
+  line-height: 1.8em;
 }
 
 a {
+  color: #e37520;
   text-decoration: none;
 }

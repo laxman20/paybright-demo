@@ -1,5 +1,42 @@
+* {
+  font-family: Arial;
+}
+
+.container {
+  max-width: 40em;
+  margin: auto;
+}
+
 img {
   display: block;
   margin: auto;
   height: 5em;
+  clear: both;
 }
+
+.left {
+  float: left;
+  margin-left: 1em;
+  color: grey;
+}
+
+.left p {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+.right {
+  float: right;
+  margin-right: 1em;
+  color: #e37520;
+}
+
+.fa-arrow-left {
+  font-size: 0.8em;
+}
+
+p {
+  margin: auto;
+  font-size: 0.8em;
+}
+
