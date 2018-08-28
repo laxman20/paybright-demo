@@ -12,6 +12,7 @@ import { IdentityFormComponent } from './identity-form/identity-form.component';
 import { PaymentFormComponent } from './payment-form/payment-form.component';
 import { PaymentSelectComponent } from './payment-select/payment-select.component';
 import { DocumentsFormComponent } from './documents-form/documents-form.component';
+import { ConfirmFormComponent } from './confirm-form/confirm-form.component';
 
 const appRoutes: Routes = [
   { path: 'application', component: ApplicationFormComponent },
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
   { path: 'identity', component: IdentityFormComponent },
   { path: 'payment', component: PaymentFormComponent },
   { path: 'documents', component: DocumentsFormComponent },
+  { path: 'confirm', component: ConfirmFormComponent },
   { path: '', redirectTo: '/application', pathMatch: 'full' }
 ]
 
@@ -32,7 +34,8 @@ const appRoutes: Routes = [
     IdentityFormComponent,
     PaymentFormComponent,
     PaymentSelectComponent,
-    DocumentsFormComponent
+    DocumentsFormComponent,
+    ConfirmFormComponent
   ],
   imports: [
     BrowserModule,
