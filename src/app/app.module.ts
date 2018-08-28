@@ -10,6 +10,7 @@ import { TermsFormComponent } from './terms-form/terms-form.component';
 import { QuestionComponent } from './question/question.component';
 import { IdentityFormComponent } from './identity-form/identity-form.component';
 import { PaymentFormComponent } from './payment-form/payment-form.component';
+import { PaymentSelectComponent } from './payment-select/payment-select.component';
 
 const appRoutes: Routes = [
   { path: 'application', component: ApplicationFormComponent },
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
     TermsFormComponent,
     QuestionComponent,
     IdentityFormComponent,
-    PaymentFormComponent
+    PaymentFormComponent,
+    PaymentSelectComponent
   ],
   imports: [
     BrowserModule,

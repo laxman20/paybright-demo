@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="header"
+    [ngClass]="{ selected: selection == 0 }"
+    (click)="selection = 0">
+    <div class="radio"><div class="radio-select"></div></div>
+    <div class="title">Visa / Mastercard</div>
+  </div>
+  <div class="content credit" *ngIf="selection == 0">
+    <input type="text" placeholder="Name on card">
+    <input type="number" placeholder="Card number">
+    <div class="half-container">
+      <input class="left-half" type="text" placeholder="MM/YY">
+      <input class="right-half" type="text" placeholder="CVV">
+    </div>
+    <p class="address bold">Billing Address:</p>
+    <p class="address">270 Rue Olier Chicoutimi, QC G7G 4J3</p>
+    <label><input type="checkbox"/>Use a different billing address</label>
+  </div>
+  <div class="gap"></div>
+  <div class="header"
+  [ngClass]="{ selected: selection == 1 }"
+  (click)="selection = 1">
+    <div class="radio"><div class="radio-select"></div></div>
+    <div class="title">Pre-Authorized Debit</div>
+  </div>
+  <div class="content debit" *ngIf="selection == 1">
+    <p>Sign in securely into your financial institution and to pre-authenticate your chequing account as your preferred payment method.</p>
+    <div class="scroll-container">
+      <img src="assets/td.png"/>
+      <img src="assets/td.png"/>
+      <img src="assets/td.png"/>
+      <img src="assets/td.png"/>
+      <img src="assets/td.png"/>
+      <img src="assets/td.png"/>
+      <img src="assets/td.png"/>
+      <img src="assets/td.png"/>
+    </div>
+  </div>
+  <p class="notice">You will have the opportunity to review your payment plan before it is finalized.</p>
+  <button [attr.disabled]="selection == undefined ? true : null"
+    (click)="onSubmit()">CONTINUE</button>
+</div>

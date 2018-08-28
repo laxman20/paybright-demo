@@ -1,0 +1,161 @@
+.container {
+  max-width: 24em;
+  margin: auto;
+}
+
+.header {
+  position: relative;
+  color: #003861;
+  background-color: lightgrey;
+  font-size: 1.1em;
+  line-height: 2em;
+  height: 2em;
+}
+
+.title {
+  margin-left: 1em;
+  display: inline-block;
+}
+
+.header.selected {
+  background-color: #003861;
+  color: white;
+}
+
+
+.gap {
+  border: 1px solid white;
+}
+
+.radio {
+  position: relative;
+  border: 1px solid #003861;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.selected .radio-select {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+.selected .radio {
+  border: 1px solid white;
+  background-color: white;
+}
+
+.content {
+  border: 1px solid lightgrey;
+}
+
+input[type=text], input[type=number] {
+  display: block;
+  width: 100%;
+  max-width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  height: 2.5em;
+  border-radius: 0.2em;
+  border: 1px solid grey;
+  font-size: 1em;
+  padding-left: 1em;
+}
+
+::placeholder {
+  color: lightgrey;
+}
+
+label {
+  color: #003861;
+  display: block;
+  max-width: 23em;
+  margin-top: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.half-container {
+  width: 21em;
+  margin: 0 auto;
+  height: 3.5em;
+}
+
+.half-container input.left-half {
+  float: left;
+  width: 9em;
+  margin-top: 0;
+}
+
+.half-container input.right-half {
+  float: right;
+  width: 9em;
+  margin-top: 0;
+}
+
+p {
+  color: #003861;
+  padding-left: 1em;
+  margin: 0.5em auto;
+}
+
+.address {
+  width: 8em;
+  padding-right: 12em;
+}
+
+.bold {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.scroll-container {
+  overflow: scroll;
+  height: 15em;
+}
+
+img {
+  border: 2px solid lightgrey;
+  border-radius: 0.2em;
+  height: 6em;
+  padding-left: 2.7em;
+  padding-right: 2.7em;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+}
+
+button {
+  background-color: #003861;
+  border-radius: 0.2em;
+  color: white;
+  font-size: 1em;
+  height: 2.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+}
+
+button:disabled {
+  background-color: lightgrey;
+}
+
+.notice {
+  margin-top: 2em;
+  text-align: center;
+  max-width: 18em;
+}

@@ -12,4 +12,7 @@ export class PaymentFormComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmit() {
+  }
+
 }

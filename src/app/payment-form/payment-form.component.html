@@ -1,8 +1,11 @@
 <app-progress-bar
-  [title]="'Payment'"
+  [title]="'Payment Setup'"
   [step]="3"
   [total]="4">
 </app-progress-bar>
 <p>
-  payment-form works!
+  Please set up your automatic payments of <span>$146/month</span>
 </p>
+<p>Choose a payment source below:</p>
+<app-payment-select (submit)="onSubmit()"></app-payment-select>
+<p class="footer">Privacy Statement | Refund Policy</p>
