@@ -4,7 +4,7 @@
 }
 
 h2 {
-  color: #003861;
+  color: #003563;
   text-align: center;
   font-weight: normal;
 }
@@ -17,7 +17,9 @@ p {
 }
 
 td {
+  font-size: 0.9em;
   color: #016796;
+  line-height: 1.2em;
 }
 
 hr {
@@ -31,7 +33,7 @@ table {
 }
 
 .table-right {
-  color: #003861;
+  color: #003563;
   text-align: right;
 }
 

@@ -55,16 +55,16 @@ li:last-child::before {
 }
 
 .active ~ li > div > p.stage {
-  background: lightgrey;
+  background-color: #e6e6e6;
   color: grey;
 }
 
 .active ~ li::after {
-  background: lightgrey;
+  background-color: #e6e6e6;
 }
 
 .active ~ li::before {
-  background: lightgrey;
+  background-color: #e6e6e6;
 }
 
 ul {

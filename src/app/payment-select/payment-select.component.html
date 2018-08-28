@@ -6,14 +6,21 @@
     <div class="title">Visa / Mastercard</div>
   </div>
   <div class="content credit" *ngIf="selection == 0">
+    <div class="cards">
+      <img class="visa" src="assets/visa.jpg"/>
+      <img class="mastercard" src="assets/mastercard.png"/>
+      <i class="fa fa-lock"></i>
+      <span>Secure and Encrypted</span>
+      <p>Prepaid cards are not accepted</p>
+    </div>
     <input type="text" placeholder="Name on card">
     <input type="number" placeholder="Card number">
     <div class="half-container">
       <input class="left-half" type="text" placeholder="MM/YY">
       <input class="right-half" type="text" placeholder="CVV">
     </div>
-    <p class="address bold">Billing Address:</p>
-    <p class="address">270 Rue Olier Chicoutimi, QC G7G 4J3</p>
+    <p class="address-title bold">Billing Address:</p>
+    <p class="address-content">270 Rue Olier Chicoutimi, QC G7G 4J3</p>
     <label><input type="checkbox"/>Use a different billing address</label>
   </div>
   <div class="gap"></div>

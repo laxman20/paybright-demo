@@ -5,20 +5,21 @@
 
 .header {
   position: relative;
-  color: #003861;
-  background-color: lightgrey;
+  color: #003563;
+  background-color: #e6e6e6;
   font-size: 1.1em;
   line-height: 2em;
-  height: 2em;
 }
 
 .title {
   margin-left: 1em;
   display: inline-block;
+  font-size: 0.9em;
+  padding: 0.2em 0;
 }
 
 .header.selected {
-  background-color: #003861;
+  background-color: #003563;
   color: white;
 }
 
@@ -29,7 +30,7 @@
 
 .radio {
   position: relative;
-  border: 1px solid #003861;
+  border: 1px solid #003563;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -79,12 +80,11 @@ input[type=text], input[type=number] {
 }
 
 label {
-  color: #003861;
+  color: #003563;
   display: block;
   max-width: 23em;
-  margin-top: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0.5em auto;
+  font-size: 0.9em;
 }
 
 .half-container {
@@ -106,14 +106,20 @@ label {
 }
 
 p {
-  color: #003861;
+  color: #003563;
   padding-left: 1em;
   margin: 0.5em auto;
 }
 
-.address {
+.address-title {
   width: 8em;
   padding-right: 12em;
+}
+
+.address-content {
+  width: 8em;
+  padding-left: 0;
+  padding-right: 13em;
 }
 
 .bold {
@@ -137,13 +143,13 @@ img {
 }
 
 button {
-  background-color: #003861;
+  background-color: #003563;
   border-radius: 0.2em;
   color: white;
   font-size: 1em;
   height: 2.5em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -151,11 +157,53 @@ button {
 }
 
 button:disabled {
-  background-color: lightgrey;
+  background-color: #e6e6e6;
 }
 
 .notice {
   margin-top: 2em;
   text-align: center;
   max-width: 18em;
+}
+
+.cards {
+  width: 20em;
+  margin: auto;
+}
+
+.cards span {
+  padding-left: 5px;
+  font-size: 0.8em;
+  line-height: 1em;
+  color: #003563;
+}
+
+.cards p {
+  font-style: italic;
+  font-size: 0.8em;
+  padding-left: 60px;
+  margin: auto;
+}
+
+.visa {
+  height: 18px;
+  border: none;
+  padding-left: 30px;
+  padding-right: 0;
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
+.mastercard {
+  height: 18px;
+  border: none;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.fa-lock {
+  padding-left: 15px;
+  color: #003563;
 }

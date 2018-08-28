@@ -1,18 +1,21 @@
 td {
-  color: #003861;
+  font-size: 0.9em;
+  color: #016796;
+  line-height: 1.2em;
 }
 
 hr {
-  max-width: 24em;
+  max-width: 21em;
   border: 0.5px solid #e37520;
 }
 
 table {
   margin: auto;
-  width: 24em;
+  width: 21em;
 }
 
 .table-right {
+  color: #003563;
   text-align: right;
 }
 
@@ -35,14 +38,16 @@ span {
 
 label {
   display: block;
-  max-width: 16em;
+  max-width: 19em;
   margin: auto;
-  color: #003861;
+  color: #003563;
+  font-size: 0.9em;
 }
 
 input[type=checkbox] {
   float: left;
   margin-right: 1em;
+  margin-bottom: 2em;
 }
 
 p {
@@ -65,8 +70,8 @@ button {
   color: white;
   font-size: 1em;
   height: 2.5em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
   display: block;
   margin-left: auto;
   margin-right: auto;
