@@ -1,0 +1,41 @@
+<app-progress-bar
+  [title]="'Documents'"
+  [step]="4"
+  [total]="4" >
+</app-progress-bar>
+<p>Terms of your payment plan</p>
+<hr class="top">
+<table>
+  <tr>
+    <td>Your purchase today:</td>
+    <td class="table-right">$1,500.25</td>
+  </tr>
+  <tr>
+    <td>Monthly payment:</td>
+    <td class="table-right">$208.42</td>
+  </tr>
+  <tr>
+    <td>Term:</td>
+    <td class="table-right"> 12 Months</td>
+  </tr>
+  <tr>
+    <td>First payment due:</td>
+    <td class="table-right">10 January 2018</td>
+  </tr>
+  <tr>
+    <td>Total cost of borrowing:</td>
+    <td class="table-right">$0.00 (0.00% APR)</td>
+  </tr>
+  <tr>
+    <td>Total repayment amount:</td>
+    <td class="table-right">$1,500.25</td>
+  </tr>
+</table>
+<hr class="bottom">
+<div class="checkbox">
+  <input type="checkbox">
+  <label>I have reviewed and agree to the terms of the <span>Loan Agreement</span> and the refund policy provided by [Merchant].</label>
+</div>
+<p class="notice">A copy of your Loan Agreement will be emailed to you. You will also receive access to the PayBright customer portal to see your loan details.</p>
+<button (click)="onSubmit()">CONFIRM PAYMENT PLAN</button>
+<p class="footer">Privacy Statement | Refund Policy</p>

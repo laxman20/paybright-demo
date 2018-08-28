@@ -11,12 +11,14 @@ import { QuestionComponent } from './question/question.component';
 import { IdentityFormComponent } from './identity-form/identity-form.component';
 import { PaymentFormComponent } from './payment-form/payment-form.component';
 import { PaymentSelectComponent } from './payment-select/payment-select.component';
+import { DocumentsFormComponent } from './documents-form/documents-form.component';
 
 const appRoutes: Routes = [
   { path: 'application', component: ApplicationFormComponent },
   { path: 'terms', component: TermsFormComponent },
   { path: 'identity', component: IdentityFormComponent },
   { path: 'payment', component: PaymentFormComponent },
+  { path: 'documents', component: DocumentsFormComponent },
   { path: '', redirectTo: '/application', pathMatch: 'full' }
 ]
 
@@ -29,7 +31,8 @@ const appRoutes: Routes = [
     QuestionComponent,
     IdentityFormComponent,
     PaymentFormComponent,
-    PaymentSelectComponent
+    PaymentSelectComponent,
+    DocumentsFormComponent
   ],
   imports: [
     BrowserModule,
