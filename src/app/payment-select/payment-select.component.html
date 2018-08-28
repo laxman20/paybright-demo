@@ -20,8 +20,9 @@
       <input class="right-half" type="text" placeholder="CVV">
     </div>
     <p class="address-title bold">Billing Address:</p>
-    <p class="address-content">270 Rue Olier Chicoutimi, QC G7G 4J3</p>
-    <label><input type="checkbox"/>Use a different billing address</label>
+    <input *ngIf="differentAddress.checked" type="text" placeholder="Start typing your address here...">
+    <p *ngIf="!differentAddress.checked" class="address-content">270 Rue Olier Chicoutimi, QC G7G 4J3</p>
+    <label><input #differentAddress type="checkbox" (change)="true"/>Use a different billing address</label>
   </div>
   <div class="gap"></div>
   <div class="header"

@@ -78,6 +78,10 @@ button {
   margin-top: 1.5em;
 }
 
+button:disabled {
+  background-color: #e6e6e6;
+}
+
 .footer {
   font-size: 0.8em;
   margin-top: 2em;

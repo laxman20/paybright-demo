@@ -33,9 +33,10 @@
 </table>
 <hr class="bottom">
 <div class="checkbox">
-  <input type="checkbox">
+  <input #agreement type="checkbox" (click)="true">
   <label>I have reviewed and agree to the terms of the <span>Loan Agreement</span> and the refund policy provided by [Merchant].</label>
 </div>
 <p class="notice">A copy of your Loan Agreement will be emailed to you. You will also receive access to the PayBright customer portal to see your loan details.</p>
-<button (click)="onSubmit()">CONFIRM PAYMENT PLAN</button>
+<button [attr.disabled]="agreement.checked ? null : true"
+  (click)="onSubmit()">CONFIRM PAYMENT PLAN</button>
 <p class="footer">Privacy Statement | Refund Policy</p>
